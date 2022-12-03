@@ -134,6 +134,17 @@ var circle = L.circle([35.36277, 138.73078], {
         .setContent("10. Lavender Trail, -France")
         .addTo(map);
 
+        var latlngs = [
+    [[47.69, -42.54],
+     [27.69, -42.54],
+     [-4.69, -42.54]],
+    [[47.69, -42.54],
+     [33.72, -14.77],
+     [27.69, -42.54]],
+     [[27.69, -42.54],
+    [6.665, 2.944]]
+];
+var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
 
 
 
