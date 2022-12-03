@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Leaflet Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<style>
+#map {width: 1900px; height: 700px}
+</style>
+<body>
+  <h1>Top 10 Places I want to visit</h1>  
+<div id="map"></div>
+</body>
+<script>
+var map_center = [10.3392, 123.8537];
+var mapOptions = {
+  center: map_center,
+  zoom: 5.5
+}
+var map = L.map('map', mapOptions);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 12,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+// Places
+var circle = L.circle([35.36277, 138.73078], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([35.36277, 138.73078])
+        .setContent("1. Mount Fuji, Oyama -Japan ")
+        .addTo(map);
+
+        var circle = L.circle([-20.205804148138395, -67.50733061407053], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([-20.205804148138395, -67.50733061407053])
+        .setContent("2. Salar De Uyuni –Bolivia")
+        .addTo(map);
+
+        var circle = L.circle([22.16774339866846, -159.63940503581057], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([22.16774339866846, -159.63940503581057])
+        .setContent("3. Nā Pali Coast State Wilderness Park, -Hawaii")
+        .addTo(map);
+
+        var circle = L.circle([63.40640967535826, -19.07165004507135], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([63.40640967535826, -19.07165004507135])
+        .setContent("4. Reynisfjara Beach, -Iceland ")
+        .addTo(map);
+
+        var circle = L.circle([5.970215368584796, -62.536234528051594], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([5.970215368584796, -62.536234528051594])
+        .setContent("5. Angel Falls, -Venezuela")
+        .addTo(map);
+
+        var circle = L.circle([52.97200099666557, -9.430753692097372], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([52.97200099666557, -9.430753692097372])
+        .setContent("6. Cliffs of Moher, Ireland")
+        .addTo(map);
+
+        var circle = L.circle([-50.942170685340784, -73.40678790226129], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([-50.942170685340784, -73.40678790226129])
+        .setContent("7. Torres del Paine National Park, -Chile")
+        .addTo(map);
+
+        var circle = L.circle([-17.931600705329902, 25.82793455208064], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([-17.931600705329902, 25.82793455208064])
+        .setContent("8. Victoria Falls, -Zambia and Zimbabwe")
+        .addTo(map);
+
+        var circle = L.circle([68.47111630410734, 13.863608765040697], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([68.47111630410734, 13.863608765040697])
+        .setContent("9. The Lofoten Islands, Norway")
+        .addTo(map);
+
+        var circle = L.circle([44.15975264899586, 5.410677744916797], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([44.15975264899586, 5.410677744916797])
+        .setContent("10. Lavender Trail, -France")
+        .addTo(map);
+
+
+
+
+
+</script>
+</html>
